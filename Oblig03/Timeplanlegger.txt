@@ -1,0 +1,20 @@
+Oppgave 3.1
+a)
+start1 == 10, slutt1 == 12, start2 == 11, slutt2 == 13
+if(slutt1<=start2 || slutt2<=start1)
+if(12<=11 or 13<=10) neither are true, if-test fails
+do code in else block
+
+b)
+start1 == 10, slutt1 == 11, start2 == 12, slutt2 == 13
+if(slutt1<=start2 || slutt2<=start1)
+if(11<=12 or 13<=10) 11<=12 is true, if-test passes
+do code in if block
+
+c)
+-Verify that startN is before sluttN(unless date changes during class...)
+-Verify that recieved int is a valid time stamp, 1189 does not exist
+-Set lower limit for duration, e.g.: start 1100 slutt 1102 is useless
+-Maby set upper limit for duration, please no 16H classes
+-Show error or Alert if classes is outside normal working hours
+-Show alert if time between classes is shorter than some amount

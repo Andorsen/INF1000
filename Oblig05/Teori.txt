@@ -1,0 +1,26 @@
+a)
+De metodesignaturer(og kommentarer til disse) som tillater manipulering av
+objekter av klassen de er en del av, er klassens grensesnitt (the public interface).
+Disse deles stort sett inn i "mutators" som kan sette eller endre en verdi for en variabel,
+og "accessors" som returnerer en verdi.
+Grensesnittet er bare signaturen(public, returverdi, metodenavn, og parametere denne metoden tar imot)
+
+Implementasjonen av en klasse inneholder den faktiske koden som kjøres inne i metodene,
+og andre metoder som ikke er en del av grensesnittet.
+
+b)
+En instansmetode er spesifik for en instanse(objekt) av en klasse.
+Disse vil gjøre beregninger eller returnere verdier basert på tilstanden til
+den gitte instansen av klassen.
+
+En statisk metode er felles for alle instanser av denne klassen og kan brukes
+uten å opprette et objekt av klassen.
+Se Employee.java:
+public String getName()
+vil returnere navnet til det spesifiserte objektet og må kalles gjennom selve objektet
+F.eks: anEmployee.getName()
+
+public static int getLastId()
+vil returnere den statiske variabelen assignId, som er felles for alle instanser av klassen.
+Denne kalles direkte på klassen
+Employee.getLastId()
